@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+}
+
+.header{
+    background-color: rgb(2, 2, 50);
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    position: relative;
+
+}
+.menu{
+    display: none;
+}
+.header a{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    margin-left: 90px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    animation: header-a 1s;
+}
+
+.header a:hover{
+    font-size: 15px;
+    background-color: #eb0c0c;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.five{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.stars{
+    color: white;
+    padding-top: 10px;
+    margin-right: 20px;
+    gap: 25px;
+}
+.stars h1{
+    padding-top: 0px;
+}
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column;
+        padding-left: 0%;
+    }
+    .five{
+        display: flex;
+        gap: 0px;
+        font-size: 13PX;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .menu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding-top: 10px;
+        display: block;
+    }
+    .header a{
+        display: none;
+    }
+    .header a{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+}
+
+
+@keyframes header-a {
+    from{
+        transform: scale(0.5);
+        background-color: green;
+    }
+    to{
+        transform: scale(1);
+        background-color: blue;
+    }
+}
+
+.imag2 img{
+    margin-top: 50px;
+    background-color: darkolivegreen;
+    width: 1300px;
+    height: 500px;
+    margin: 50px;
+}
+
+
+keyframes all1 {
+    from{
+        transform: translate(-700px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+@keyframes all2 {
+    from{
+        transform: translate(0px, -700px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+@keyframes all3 {
+    from{
+        transform: translate(700px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+
+
+
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    color: aliceblue;
+    width: 100%;
+    height: 300px;
+    margin: 50px;
+    border-radius: 40px;
+    position: relative;
+}
+.all1{
+    background-color: aliceblue;
+    color: black;
+    width: 350px;
+    font-weight: bold;
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    animation: all1 1s;
+}
+.all2{
+    background-color: aliceblue;
+    color: black;
+    width: 810px;
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    animation: all2 1s;
+}
+.all3{
+    background-color: aliceblue;
+    color: black;
+    width: 350px;
+    font-weight: bold;
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 20px;
+    animation: all3 1s;
+}
+.all3 H3{
+    margin-top: 10PX;
+    background-color: rgb(2, 2, 50);
+    color: white;
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 20px;
+    animation: header-a 1s;
+}
+
+.all3 h1{
+    color: blue;
+}
+.all2 H1{
+    margin-top: 10PX;
+    color: blue;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.all2 ul{
+    list-style: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.all2 i{
+    color: blue;
+}
+.all1 H1{
+    margin-top: 10PX;
+    color: blue;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 22px;
+}
+.all a{
+    position: absolute;
+    background-color: rgb(2, 2, 50);
+    color: white;
+    top: 310px;
+    left: 100px;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    padding: 10px;
+    text-decoration: none;
+    animation: a 3s infinite;
+}
+
+@keyframes a {
+    0%{
+        transform: rotate(0deg);
+        background-color: aqua;
+    }
+    25%{
+        transform: rotate(100deg);
+        box-shadow: 10px 10px 10px 5px green;
+    }
+    50%{
+        transform: rotate(180deg);
+        text-shadow: 10px 10px 10px 10px black;
+    }
+
+    75%{
+        transform: rotate(275deg);
+        background-color: blueviolet;
+        font-weight: bold;
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: #eb0c0c;
+        color: aliceblue;
+        font-size: 25px;
+    }
+}
+
+
+.all a:hover{
+    background-color: black;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.footer{
+    background-color: rgb(2, 2, 50);
+    color: white;
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 490px;
+    animation: footer 1s;
+}
+
+@keyframes footer {
+    from{
+        transform: translate(0px, 700px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+
+
+.last{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cont1 H2{
+    color: GREEN;
+}
+
+.cont1{
+    font-size: 30px;
+}
+.cont1 p{
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.btns button{
+    display: flex;
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btns button:hover{
+    font-size: 25px;
+    width: 250px;
+    height: 50px;
+}
+.bashal{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    color: green;
+}
+
+.company{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+    padding-left: 1100px;
+    font-size: 30px;
+    color: green;
+}
+
+.company i{
+    color: green;
+}
+
+.footer h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    color: green;
+}
+
+
+@media (max-width: 768px) {
+    .footer{
+    height: 1220px;
+    margin: 10px;
+    margin-top: 650px;
+        
+    }
+
+
+    .company{
+        padding-left: 0%;
+    }
+    .footer h3{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .all{
+        flex-direction: column;
+        position: relative;
+    }
+    .all3 a{
+        position: absolute;
+        top: 870px;
+        left: 50px;
+        border-radius: 15px;
+    }
+
+    .all2{
+        width: 400px;
+    }
+
+    .cont1{
+        flex-direction: column;
+    }
+    .last{
+        flex-direction: column;
+        width: 100%;
+    }
+    .text1{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        left: 20px;
+        top: 200px;
+       
+
+    }
+    .text1 h1{
+        font-size: 30px;
+    }
+    .text1 p{
+        font-size: 19px;
+    }
+
+    .background{
+        position: relative;
+    }
+
+}
+
